@@ -98,7 +98,8 @@ body {
     margin-bottom: 40px;
     font-size: 40px;
 }
-.container-service{
+
+.container-service {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -106,41 +107,103 @@ body {
     color: seashell;
     text-align: justify;
 }
-.container-service img{
+
+.container-service img {
     width: 40%;
 }
-.checklist-service{
+
+.checklist-service {
     width: 45%;
 }
-.service{
+
+.service {
     margin-bottom: 20px;
 }
-.n-service{
+
+.n-service {
     margin-bottom: 7px;
     color: #9f8ad0;
 }
-.number{
+
+.number {
     display: inline-block;
     background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
     width: 30px;
     height: 30px;
     color: snow;
     text-align: center;
-    line-height: 30px; /*! Centrar texto verticalmente  */
+    line-height: 30px;    /*! Centrar texto verticalmente  */
     border-radius: 50%;
     margin-right: 5px;
 }
-.gallery{
+
+/*!  Gaaleria */
+
+.gallery {
     background-color: cornsilk;
 }
-.container-galery{
+
+.container-galery {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.img-gallery{
+
+.img-gallery {
     width: 30%;
     display: block;
     margin-bottom: 15px;
     box-shadow: 0 0 8px rgb(27, 42, 61, .5);
+    cursor: pointer;
+}
+
+.imagen-light {
+    position: fixed;
+    background: rgb(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;  /*& alinear de manera horizontal */
+    align-items: center;   /*! alinear de manera vertical */
+    transition: transform .2s ease-in-out;
+    transform: translate(100%);
+}
+
+.show{
+    transform: translate(0);
+}
+.add-img {
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s 2.s;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/*! Expertos */
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: snow;
+}
+
+
+
+footer{
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
 }
