@@ -132,7 +132,8 @@ body {
     height: 30px;
     color: snow;
     text-align: center;
-    line-height: 30px;    /*! Centrar texto verticalmente  */
+    line-height: 30px;
+    /*! Centrar texto verticalmente  */
     border-radius: 50%;
     margin-right: 5px;
 }
@@ -165,22 +166,26 @@ body {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: center;  /*& alinear de manera horizontal */
-    align-items: center;   /*! alinear de manera vertical */
+    justify-content: center;
+    /*& alinear de manera horizontal */
+    align-items: center;
+    /*! alinear de manera vertical */
     transition: transform .2s ease-in-out;
     transform: translate(100%);
 }
 
-.show{
+.show {
     transform: translate(0);
 }
+
 .add-img {
     width: 60%;
     border-radius: 10px;
     transform: scale(0);
     transition: transform .3s 2.s;
 }
-.close{
+
+.close {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -189,21 +194,93 @@ body {
 }
 
 /*! Expertos */
-.experts{
+
+.experts {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-.cont-expert{
+
+.cont-expert {
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
     color: snow;
 }
 
+.cont-expert img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
 
+.n-expert {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+/*! Footer  */
+footer {
+    background: black;
+    padding: 0.1px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+.brand+p{
+    font-weight: 500;
+}
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+}
 
-footer{
-    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+.social-media-icon:nth-child(1):hover{
+    background: #0268e2;
+    color: white;
+}
+.social-media-icon:nth-child(2):hover{
+    background: #1da1f2;
+    color: white;
+}
+.social-media-icon:nth-child(3):hover{
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    color: white;
+}
+
+.line{
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+height: 2px;
+background: #fff;
+margin-bottom: 70px;
 }
