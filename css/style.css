@@ -61,7 +61,7 @@ body {
     right: 0;
     width: 20vw;
     height: 100%;
-    background-image: linear-gradient(to top, rgba(15, 216, 79, 0.200) 0%, rgba(249, 240, 71, 0.200) 100%);
+    background-image: linear-gradient(to top, rgba(15, 216, 79, 0.600) 0%, rgba(249, 240, 71, 0.600) 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
