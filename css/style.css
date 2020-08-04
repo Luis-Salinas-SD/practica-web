@@ -33,6 +33,7 @@ body {
 }
 
 .head {
+    text-align: center;
     padding: 0;
     height: 100%;
     display: flex;
@@ -85,8 +86,9 @@ body {
 }
 
 .copy {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 25px;
+    color: #000
 }
 
 /*!  Nuestro Servicio*/
@@ -151,6 +153,7 @@ body {
 }
 
 .img-gallery {
+    object-fit: cover;
     width: 30%;
     display: block;
     margin-bottom: 15px;
@@ -167,22 +170,27 @@ body {
     left: 0;
     display: flex;
     justify-content: center;
-    /*& alinear de manera horizontal */
-    align-items: center;
     /*! alinear de manera vertical */
-    transition: transform .2s ease-in-out;
+    align-items: center;
+    /*! alinear de manera horizontal */
     transform: translate(100%);
+    transition: transform .2s ease-in-out;
 }
 
-.show {
+.show{
     transform: translate(0);
 }
 
 .add-img {
+    object-fit: cover;
     width: 60%;
     border-radius: 10px;
     transform: scale(0);
-    transition: transform .3s 2.s;
+    transition: transform 1s;
+
+}
+.show-img {
+    transform: scale(1);
 }
 
 .close {
@@ -221,12 +229,15 @@ body {
     width: 100%;
     font-weight: 400;
 }
+
 /*! Footer  */
+
 footer {
     background: black;
     padding: 0.1px;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -234,23 +245,28 @@ footer {
     padding-top: 60px;
     padding-bottom: 40px;
 }
-.contact-us{
+
+.contact-us {
     width: 40%;
     color: #fff;
 }
-.brand{
+
+.brand {
     font-weight: 500;
     font-size: 40px;
 }
-.brand+p{
+
+.brand+p {
     font-weight: 500;
 }
-.social-media{
+
+.social-media {
     width: 50%;
     display: flex;
     justify-content: flex-end;
 }
-.social-media-icon{
+
+.social-media-icon {
     display: inline-block;
     margin-left: 20px;
     width: 45px;
@@ -263,24 +279,98 @@ footer {
     font-size: 30px;
 }
 
-.social-media-icon:nth-child(1):hover{
+.social-media-icon:nth-child(1):hover {
     background: #0268e2;
     color: white;
 }
-.social-media-icon:nth-child(2):hover{
+
+.social-media-icon:nth-child(2):hover {
     background: #1da1f2;
     color: white;
 }
-.social-media-icon:nth-child(3):hover{
+
+.social-media-icon:nth-child(3):hover {
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     color: white;
 }
 
-.line{
-width: 90%;
-max-width: 1200px;
-margin: 0 auto;
-height: 2px;
-background: #fff;
-margin-bottom: 70px;
+.line {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 70px;
+}
+
+/*! Mobile Menu  */
+
+@media screen and (max-width: 800px) {
+    .nav-menu {
+        background: orange;
+        width: 40vw;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .container-service img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checklist-service{
+        width: 85%;
+    }
+    .service{
+        margin-bottom: 30px;
+    }
+    .add-img{
+        width: 80%;
+    }
+    .img-gallery{
+        width: 45%;
+    }
+    .cont-expert{
+        width: 80%;
+    }
+    .footer-content{
+        justify-content: center;
+    }
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .social-media-icon{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .contact-us{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .nav-menu{
+        width: 65vw;
+    }
+    .add-img{
+        width: 90%;
+    }
+    .hamburger-icon{
+        top: 20px;
+        right: 20px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .img-gallery{
+        width: 95%;
+    }
+    .social-media{
+        width: 100%;
+    }
 }
