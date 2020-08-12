@@ -1,21 +1,13 @@
 var contenido = document.querySelector('#contenido');
 function mostrar() {
-    fetch('https://developers.syscom.mx/api/v1/categorias',
-        headers = {
-            'Authorization': 'Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImE2MGE5M2VkNWUxYjBmMTkzYzM3NDE5NjczYjI2OTkwMmZmZjY4ZDZlOTIzOTEyNjcyYjU1NmU0Y2JmMTIwNDZhYWZjMGIyYWZiYjVjMjZmIn0.eyJhdWQiOiJQMDlSaFdGQVAwM2U5YkNYNUgxWU1KZ3FWalZKOUhDdSIsImp0aSI6ImE2MGE5M2VkNWUxYjBmMTkzYzM3NDE5NjczYjI2OTkwMmZmZjY4ZDZlOTIzOTEyNjcyYjU1NmU0Y2JmMTIwNDZhYWZjMGIyYWZiYjVjMjZmIiwiaWF0IjoxNTk1ODkwNzk1LCJuYmYiOjE1OTU4OTA3OTUsImV4cCI6MTYyNzQyNjc5NCwic3ViIjoiIiwic2NvcGVzIjpbXX0.s8Us31jmZ67NmHKz4vrxwtf709SLqBV7CoXrR7v1Ks5purHnABE1hRoWdhb3a82WsOS24QoNfw0n1cqJXklhnA6xqsm7vJT6qU8kj7VMw6G3pHvJ50RrvyNVTFVFas_DZmppc6IQJEuR-fd2vFkyXQ1LOy1nVzXuT97y7f2VVJhnqCCfVjtEDeQX8Xq1EW4tuFpaO8Tl0y7dVnaVWxhO1zDGhjKUXjaZD0tBEcjMDnE4jm6ZAWj3bHk_kjIfcLHGdcJ7BFQDGzcQhfSwptUJrFsSaMdVma8gZjJMAVoQADdqqcFPfWUV6fZc5_8Q-5nXjbn373KWk1XPpLfsYFQlyOWpTaZud9gUthjrhftPUslLl_11oe_jjCHQqbZJ--sNM5RkZZm5lPq1VogcDV3Xsjf6zxcAZN01Cz539hY0-r8jArap93uB_135tz-zZUtmf-zwD1fQNIkzyVoAly9iV5CSNGXozD6ybj-_RGs7g6-FdoK-gSk7j4kvWaVQGN_TTxfhP_if8gj6L9L_9JS9wRgv9f7TC_RFBzfiW2Aqpw71wFR-FzUP80F52ybtFUnG0-91-yigtxv9vAQVy4D5oeenIwnFM-wBE-gCOiFpuyzwaA8VcCgVconxif3dVKZU9JhzzHN2zswR5HzEcEbg807IwSiX0o-Dk1OIoTbz2pQ',
-        },
-    )
+    fetch('https://developers.syscom.mx/api/v1/productos?categoria=22',{
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjZlZTkwYjc3NmNkNTU5OTU4ZGI2MjhjODlhOGI3Nzg2YzU2NTQzYTc1NWNhMjI0NzdhZWIzOTA3ZDkyN2FjMmNhYTA5MzY4NjcyZDliMDllIn0.eyJhdWQiOiJQMDlSaFdGQVAwM2U5YkNYNUgxWU1KZ3FWalZKOUhDdSIsImp0aSI6IjZlZTkwYjc3NmNkNTU5OTU4ZGI2MjhjODlhOGI3Nzg2YzU2NTQzYTc1NWNhMjI0NzdhZWIzOTA3ZDkyN2FjMmNhYTA5MzY4NjcyZDliMDllIiwiaWF0IjoxNTk3MjUyODQ1LCJuYmYiOjE1OTcyNTI4NDUsImV4cCI6MTYyODc4ODg0NSwic3ViIjoiIiwic2NvcGVzIjpbXX0.AT9qpbdpwJz86mnfedPX2T6IRO6e9DeF9oswVnOzvk1GJX0NKzN0SHkSJ1WrCJiAAqaH9ArUs45uzp3g_AgWiMbc_Gieiaq1fwlko90Fzm4693Sii23yr3gcO7xUISeRP1PXncdRX4MTwEb-q1C4QI0FVcVn4iD_Mbdoj9sVvSi6tK2JkFOpJToLsTlozrU6u78PTHfPdznBY2_ArtPMpKvupmPmGPREPz2jWxPZ8HtDSux4QFKcKckcHMh0G4ibIFjkQUBwwgXYb7gD3dELlsuNrHRyPqjTgXpejnHzYP71_jEGO7-2PpK6YKoNK9PVmdQBUgWM5LYtMYqx_hfhwb4ZKL9LlNf3Jtoa5kGlDhfH5-slFyiLZ65-cPEocktXuPucHPZNERd8WTpVLIzIhhGP9odz0sb_ta5U6y8XIsuvwi7GvubdewciL0pkt3z607AHO0aLe3TjQhAWtZS69ry5IDELuhUKA8nDIFNhVg_MFs_jtMb9D8Aga0X9dy0IKh_5iGjuxOT5edLxzor2002-ybOAec7up57UAAxVu-fo-QpjsnLAUS2GrSsxQm8SeKYb-hDzNIfymF9Brp-znhq2j-SQvZ0es1jNx4ePQOwda0fiRbqFtbfhwoyfcPzTg8yMViFMlAHhGT4VU62a4YrMbK19d9L-WiTf_6t9wg0'
+        }
+    })
         .then(r => r.json())
         .then(data => {
             console.log(data)
         })
 }
-
-
-
-
-
-
-
-
-
