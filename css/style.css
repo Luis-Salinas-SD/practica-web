@@ -230,6 +230,40 @@ body {
     font-weight: 400;
 }
 
+/*! Service -API REST  */
+
+.api-rest{
+    color: antiquewhite;
+    text-align: justify;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn{
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+    background:   #3498db  ;
+    color: antiquewhite;
+    padding: 7px;
+    border: 1px  #21618c  solid;
+    border-radius: 6px;
+    text-decoration: none;
+    width: 67px;
+}
+.btn:hover{
+    background:  #85c1e9 ;
+    color: black;
+}
+
+p{
+    color: seashell;
+    text-align: justify;
+}
+
 /*! Footer  */
 
 footer {
