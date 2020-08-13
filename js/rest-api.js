@@ -14,10 +14,8 @@ function mostrar() {
             <p>ID: ${data.productos[0].producto_id}</p>
             <p>Nombre: ${data.productos[0].titulo}</p>
             <p>Modelo: ${data.productos[0].modelo}</p>
-            <p>Exsistencias: ${data.productos[0].titulo}</p>
+            <p>Exsistencias: ${data.productos[0].total_existencia}</p>
             <p>Marca: ${data.productos[0].marca}</p>
-
-
             `
         })
 }
