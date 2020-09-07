@@ -1,0 +1,12 @@
+body{
+	background: #13293D	!important;
+}
+
+#contenido{
+    color: black;
+    background: #2A628F;
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
