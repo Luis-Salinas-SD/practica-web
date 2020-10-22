@@ -242,7 +242,7 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.btn{
+/* .btn{
     display: flex;
     margin: auto;
     margin-bottom: 15px;
@@ -257,7 +257,7 @@ body {
 .btn:hover{
     background:  #85c1e9 ;
     color: black;
-}
+} */
 
 #contenido img{
     width: 200px;

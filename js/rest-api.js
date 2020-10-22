@@ -1,4 +1,5 @@
-/* var contenido = document.querySelector('#contenido');
+
+var contenido = document.querySelector('#contenido');
 function mostrar() {
     fetch('https://developers.syscom.mx/api/v1/productos?categoria=22', {
         method: 'GET',
@@ -18,8 +19,9 @@ function mostrar() {
             <p>Marca: ${data.productos[0].marca}</p>
             `
         })
-} */
+}
 
+/*
 var contenido = document.querySelector("#contenido");
 function mostrar() {
     fetch("https://developers.syscom.mx/api/v1/productos?categoria=22", {
@@ -32,15 +34,12 @@ function mostrar() {
         .then((respuesta) => respuesta.json())
         .then((data) => {
             var luck = data.productos;
-            //console.log(luck);
+            console.log(luck);
             luck.forEach((element) => {
-                console.log(element );
-                //document.writeln(element.titulo, element.modelo, element.total_existencia);
+                console.log(element);
+                document.writeln(element.titulo, element.modelo, element.total_existencia);
             });
 
-            /*  for (let indice in luck) {
-                console.log(indice.modelo);
-                       //contenido.innerHTML = ` <p>Marca: ${luck.modelo}</p>         `
-                   } */
         }); //promise
 } //function-mostrar
+*/
